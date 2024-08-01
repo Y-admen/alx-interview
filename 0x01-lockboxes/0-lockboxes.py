@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"lockboxes"
+
+
 def canUnlockAll(boxes):
+    """ method that determines if all the boxes can be opened."""
     if not boxes or len(boxes) == 0:
         return False
 
