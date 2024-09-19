@@ -12,9 +12,8 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
-
     # Initialize dp arr with large value to compare with min
-    dp = [float('inf')] * (total + 1) # (total + 1) to include base case
+    dp = [float('inf')] * (total + 1)  # (total + 1) to include base case
     # Base case: 0 coins needed to make amount 0
     dp[0] = 0
 
@@ -24,7 +23,5 @@ def makeChange(coins, total):
             # Update the dp array for each amount from coin to total
             dp[x] = min(dp[x], dp[x - coin] + 1)
 
-
     # If dp[total] still float('inf'),means that total cannot be met
-    # by any number of coins
     return dp[total] if dp[total] != float('inf') else -1
