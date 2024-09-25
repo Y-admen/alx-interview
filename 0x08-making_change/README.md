@@ -7,4 +7,4 @@ This project contains a function to determine the fewest number of coins needed 
 - `makeChange(coins, total)`
 
 ### visualized solution
-![alt text](<Screenshot (2314).png>)
+![alt text](<Screenshot (2315).png>)
